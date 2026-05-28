@@ -415,15 +415,20 @@
   },
 
   "recipe_inventory_screen_content/content_stack_panel": {
+    "offset": [72, 0],
     "controls": [
       {
-        "recipe_book@crafting.recipe_book": {
-          "size": [ "fill", "100%" ],
-          "bindings": [
+        "recipe_book_wrapper": {
+          "type": "panel",
+          "size":[0, "100%"],
+          "controls":[
             {
-              "binding_type": "global",
-              "binding_name": "(not #is_survival_layout)",
-              "binding_name_override": "#visible"
+              "recipe_book@crafting.recipe_book": {
+                "anchor_from": "top_right",
+                "anchor_to": "top_right",
+                "size": [145, "100%"],
+                "offset": [0, 0]
+              }
             }
           ]
         }

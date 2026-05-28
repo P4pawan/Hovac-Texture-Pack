@@ -157,10 +157,10 @@
    "new_loading_animation": {
       "anim_type": "flip_book",
       "initial_uv": [ 0, 0 ],
-      "frame_count": 8,
-      "frame_step": 8,
-      "fps": 8,
-      "reversible": true,
+      "frame_count": 91,
+      "frame_step": 10,
+      "fps": 30,
+      "reversible": false,
       "easing": "linear"
     },
 
@@ -188,27 +188,37 @@
          {
             "loading":{
                "type":"panel",
-               "size":[
-                  "100%",
-                  "50%c"
-               ],
+               "orientation": "vertical",
+               "anchor_from": "center",
+               "anchor_to": "center",               
                "controls":[
                   {
-                     "loading_text": {
-                        "type": "image",
-                        "texture": "textures/ui/progress_screen/loading_text.png",
-                        "size": [ 250, 40 ],
-                        "layer": 5,
-                        "offset": [ 0, 190 ]
+                     "Hindi_text":{
+                        "type":"image",
+                        "texture": "textures/ui/progress_screen/Hovac.png",
+                        "size": [320, 50],
+                        "offset": [ -77, 59 ],
+                        "bilinear": false,
+                        "layer": 5             
+                     }
+                  },
+                  {
+                     "English_text": {
+                        "type": "label",
+                        "text": "/ please wait",
+                        "font_type": "default",
+                        "font_scale_factor": 2.2, 
+                        "offset": [ 30, 61 ],
+                        "layer": 5
                      }
                   },
                   {
                     "new_loading": {
                       "type": "image",
                       "texture": "textures/ui/progress_screen/loading.png",
-                      "offset": [0, 130 ],
-                      "size": [ 75, 75 ],
-                      "uv_size": [ 20, 20 ],
+                      "offset": [415, 195 ],
+                      "size": [50, 50 ],
+                      "uv_size": [ 10, 10 ],
                       "uv": "@new_loading_animation",
                       "disable_anim_fast_forward": true,
                       "layer": 1
@@ -254,7 +264,7 @@
                         ],
                         "offset":[
                            0,
-                           170
+                           140
                         ]
                      }
                   }
