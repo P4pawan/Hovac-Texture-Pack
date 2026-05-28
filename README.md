@@ -3,13 +3,11 @@ A custom Minecraft Bedrock Edition (MCBE) texture pack designed for a unique gam
 
 ## 📁 Repository Structure
 - **src/**: Contains the core pack files (manifest, icon, and textures).
-- **models/**: Custom entity and block geometry.
 - **particles/**: Custom particle effects.
 
 ## 🚀 Installation
-1. Download the latest `src` from the [Releases](https://github.com/P4pawan/Hovac-Texture-Pack/releases) section.
-2. Double-click the file to import it into Minecraft.
-3. Activate the pack in **Settings > Global Resources**.
+1. Use the **Texture pack installer.bat**
+2. Activate the pack in **Settings > Global Resources**.
 
 ## ✨ Features
 * [ ] High-fidelity textures
